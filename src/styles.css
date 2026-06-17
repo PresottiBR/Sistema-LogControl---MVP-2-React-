@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f4980e, #0a0721);
+  margin: 0;
+}
+
+/* HEADER FIXO */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* TOPO HEADER */
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.header-top h2 {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+/* BOTÃO MENU */
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  background: #1e293b;
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.menu p {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* HOVER MENU */
+.menu p:hover {
+  background: #334155;
+}
+
+/* CONTAINER CENTRAL */
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: 110px auto 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BEM-VINDO */
+.boas-vindas {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boas-vindas h2 {
+  margin-bottom: 5px;
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.boas-vindas p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* INPUTS E SELECT */
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* CARD CARGA */
+.carga {
+  padding: 12px;
+  background: #f1f5f9;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.carga:hover {
+  background: #e2e8f0;
+  transform: scale(1.02);
+}
+
+/* STATUS */
+.status-pendente {
+  color: #f59e0b;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.status-entregue {
+  color: #22c55e;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* BOTÕES */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* HOVER BOTÃO */
+button:hover {
+  background: #1d4ed8;
+}
+
+/* EXCLUIR */
+.btn-excluir {
+  background: #ef4444;
+}
+
+.btn-excluir:hover {
+  background: #dc2626;
+}
+
+/* VOLTAR */
+.btn-voltar {
+  width: auto;
+  background: none;
+  color: #2563eb;
+}
+
+/* PRODUTO + QTD */
+.linha-produto {
+  display: flex;
+  gap: 10px;
+}
+
+.linha-produto input {
+  flex: 1;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 110px auto 10px;
+    padding: 20px;
+  }
+}
