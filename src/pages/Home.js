@@ -111,6 +111,12 @@ function Home({ cargas, excluirCarga, atualizarStatus }) {
           </div>
         ))}
 
+        {lista.length === 0 && (
+        <p style={{ textAlign: "center", marginTop: "20px" }}>
+           Nenhuma carga encontrada
+        </p>
+        )}
+
         <button onClick={() => navigate("/nova")}>
           Nova Carga
         </button>
