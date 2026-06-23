@@ -5,7 +5,7 @@ import NovaCarga from "./pages/NovaCarga";
 import Detalhes from "./pages/Detalhes";
 import "./styles.css";
 
-// 🔥 COMPONENTE 404
+// COMPONENTE 404
 function NotFound() {
   const navigate = useNavigate();
 
@@ -96,7 +96,7 @@ function App() {
 
         <Route path="/detalhes" element={<Detalhes />} />
 
-        {/* 🔥 ROTA 404 */}
+        {/* ROTA 404 */}
         <Route path="*" element={<NotFound />} />
 
       </Routes>
